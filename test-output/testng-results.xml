@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="75418" started-at="2018-08-23T06:10:26Z" finished-at="2018-08-23T06:11:42Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="75418" started-at="2018-08-23T06:10:26Z" finished-at="2018-08-23T06:11:42Z">
+      <class name="UI.Effects">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:UI.Effects@61304778]" name="setUp" is-config="true" duration-ms="36543" started-at="2018-08-23T11:40:26Z" finished-at="2018-08-23T11:41:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="TestEffects()[pri:0, instance:UI.Effects@61304778]" name="TestEffects" duration-ms="35265" started-at="2018-08-23T11:41:03Z" finished-at="2018-08-23T11:41:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestEffects -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:UI.Effects@61304778]" name="tearDown" is-config="true" duration-ms="3605" started-at="2018-08-23T11:41:38Z" finished-at="2018-08-23T11:41:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- UI.Effects -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

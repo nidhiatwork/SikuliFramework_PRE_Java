@@ -17,15 +17,18 @@ public class Effects {
 		s.type("r", KeyModifier.KEY_CMD);
 		s.type("C:\\Users\\nbhushan\\Desktop\\SikuliFramework_PRE2019\\BatFiles\\Kill_PRE_App.bat");
 		s.type(Key.ENTER);
-
+		Thread.sleep(2000);
+		
 		s.type("r", KeyModifier.KEY_CMD);
 		s.type("C:\\Users\\nbhushan\\Desktop\\SikuliFramework_PRE2019\\BatFiles\\Clear_PRE_Cache.bat");
 		s.type(Key.ENTER);
-		
+		Thread.sleep(2000);
+
 		s.type("r", KeyModifier.KEY_CMD);
 		s.type("C:\\Program Files\\Adobe\\Adobe Premiere Elements 2019\\PremiereElementsEditor.exe");
 		s.type(Key.ENTER);
-				
+		Thread.sleep(2000);
+		
 		int timer = 0;
 		while(s.exists("imgs/Button_GoalScreen_CloseGoalScreen.png")==null && timer<=20)
 		{

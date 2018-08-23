@@ -1,7 +1,6 @@
 package UI;
 import java.util.ArrayList;
 import java.util.List;
-
 import org.testng.TestNG;
 
 public class TestNGRunner {

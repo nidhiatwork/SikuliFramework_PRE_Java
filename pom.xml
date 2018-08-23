@@ -19,7 +19,7 @@
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>6.8.8</version>
+			<version>6.9.8</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
@@ -32,31 +32,22 @@
 	
 	<build>
     <plugins>
-      <plugin>
+        <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+  		<version>2.3.2</version>
+        <configuration>
+                <source>1.6</source>
+                <target>1.6</target>
+        </configuration>
+     </plugin>
+        <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>exec-maven-plugin</artifactId>
-        <version>1.6.0</version>
-        <executions>
-          <execution>
-            
-            <goals>
-              <goal>exec</goal>
-            </goals>
-          </execution>
-        </executions>
+          <version>1.6.0</version>
         <configuration>
-          <executable>maven</executable>
-          <!-- optional -->
-          <workingDirectory>/tmp</workingDirectory>
-          <arguments>
-            <argument>-X</argument>
-            <argument>myproject:dist</argument>
-            ...
-          </arguments>
+             <mainClass>UI.TestNGRunner</mainClass>
         </configuration>
-      </plugin>
+       </plugin>
     </plugins>
-  </build>
-	
-	
+   </build>	
 </project>
