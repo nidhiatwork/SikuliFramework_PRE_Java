@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Glass Pane Test"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="77.885">
+  <properties />
+  
+  
+            <testcase name="TestGlassPane" time="77.885" classname="UI.GE_GlassPane" />
+      
+</testsuite>

@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="Glass Pane Test(failed)">
     <classes>
-      <class name="UI.Effects">
+      <class name="UI.GE_GlassPane">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="TestEffects"/>
+          <include name="TestGlassPane"/>
         </methods>
-      </class> <!-- UI.Effects -->
+      </class> <!-- UI.GE_GlassPane -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Glass Pane Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
