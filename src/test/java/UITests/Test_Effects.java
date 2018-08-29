@@ -1,26 +1,28 @@
-package UI;
+package UITests;
+
 import org.testng.Assert;
 import org.testng.annotations.*;
+import Utils.TestNGRunner;
 import org.sikuli.script.*;
 
-public class Effects extends TestNGRunner{
+public class Test_Effects extends TestNGRunner{
 
 	@Test
 	public void TestEffects() {
 
 		try {
 
-			screen.wait("imgs/Button_GoalScreen_CloseGoalScreen.png", image_timeout);
+			screen.wait("imgs/Button_GoalScreen_CloseGoalScreen.png", constants.image_timeout);
 			screen.click("imgs/Button_GoalScreen_CloseGoalScreen.png");
-			screen.wait("imgs/BaselineIMG_PREMenuBar.png", image_timeout);
+			screen.wait("imgs/BaselineIMG_PREMenuBar.png", constants.image_timeout);
 
 			screen.click("imgs/Button_ExpertRoom.png");         
-			screen.wait("imgs/BaselineIMG_ExportButtonInExpert.png", image_timeout);
-			screen.wait("imgs/Button_RHSPanels_Effects.png", image_timeout);
+			screen.wait("imgs/BaselineIMG_ExportButtonInExpert.png", constants.image_timeout);
+			screen.wait("imgs/Button_RHSPanels_Effects.png", constants.image_timeout);
 
 			screen.click("imgs/Button_RHSPanels_Effects.png");
-			screen.wait("imgs/DropDown_EffectsPanel_AllCategories.png", image_timeout);
-			screen.click("imgs/DropDown_EffectsPanel_AllCategories.png", image_timeout);
+			screen.wait("imgs/DropDown_EffectsPanel_AllCategories.png", constants.image_timeout);
+			screen.click("imgs/DropDown_EffectsPanel_AllCategories.png", constants.image_timeout);
 			Assert.assertTrue(screen.exists("imgs/BaselineIMG_Effects_AllCategories.png")!=null);
 
 			screen.click("imgs/Effects_Category_AdvancedAdjustments.png");
