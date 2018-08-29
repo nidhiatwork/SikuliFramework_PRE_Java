@@ -8,15 +8,21 @@
       <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
   
-  <test name="Effects Test">
+  <test name="Effects UI Test">
     <classes>
-      <class name="UI.Effects"/>
+      <class name="UITests.Test_Effects"/>
     </classes>
   </test> <!-- Test -->
   
-  <test name="Glass Pane Test">
+  <test name="Transitions UI Test">
     <classes>
-      <class name="UI.GE_GlassPane"/>
+      <class name="UITests.Test_Transitions"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Glass Pane UI Test">
+    <classes>
+      <class name="UITests.Test_GE_GlassPane"/>
     </classes>
   </test> <!-- Test -->
 
